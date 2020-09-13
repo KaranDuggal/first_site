@@ -1,0 +1,112 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-color: #1a52f9;
+    background-image: linear-gradient(19deg, #1a52f9 0%, #B721FF);
+    position: relative;
+}
+nav{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+}
+.logo a{
+    /* color: white;
+    text-decoration: none; */
+    font-size: 1.6rem;
+}
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 15px;
+
+}
+.menu ul li a{
+    /* color: white;
+    text-decoration: none; */
+}
+.active, ul li:hover{
+    border-top: 2px solid #5dade2;
+    border-bottom: 2px solid #5dade2;
+
+}
+.contact_btn a{
+    background-color: #d465ef;
+    padding: 12px 26px;
+    font-style: 14px;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 30px;
+    transition: 0.2s ease;
+}
+.contact_btn a:hover{
+    background: black;
+}
+/* -----------center content----------- */
+.center_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center  ;
+}
+.center_content h1{
+    color: #fff;
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.center_content h2{
+    font-size: 20px;
+    font-weight: lighter;
+    color: #fff;
+}
+.center_content h2:before{
+    content: "";
+    width: 35px;
+    height: auto;
+    border: 2px solid #fff;
+    position: absolute;
+    left: 0px;
+    bottom: 0;
+    margin-bottom: 10px;
+
+}
+/* ------------ social network------- */
+.social_network{
+    width: 100px;
+    height: auto;
+    position: absolute;
+    right: 0;
+    top: 40%;
+}
+.fa_icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #615cfd 0%, #d465ef 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 5s ease;
+}
+.fa_icon:nth-child(even){
+    margin: 20px 0; 
+}
+.fa_icon:hover{
+    background: black;
+    /* background: to bottom, #d465ef  0%, #615cfd 100%; */
+}
